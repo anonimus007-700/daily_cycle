@@ -5,7 +5,7 @@ interface SunSvgProps extends SVGProps<SVGSVGElement> {
   initialCy?: number;
 }
 
-const SunSvg = forwardRef<SVGSVGElement>(({ initialCx = 696.7, initialCy = 374.9, ...props}, ref) => (
+const SunSvg = forwardRef<SVGSVGElement, SunSvgProps>(({ initialCx = 696.7, initialCy = 374.9, ...props}, ref) => (
     <svg
     ref={ref}
     xmlns="http://www.w3.org/2000/svg"

@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import React from 'react';
-// import { useSearchParams } from 'next/navigation'
 
 import getData from '@/utils/renderSvgToString';
 import SunSvg from '@/components/SunSvg';
 
 export async function GET(request: NextRequest) {
-  // const searchParams = useSearchParams()
-  // console.log(searchParams);
+  const url = new URL(request.url);
+  const searchParams = url.searchParams;
+
+  const time = searchParams.get("time");
 
   let initialCx = 400
   let initialCy = 200

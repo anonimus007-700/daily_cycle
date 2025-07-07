@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
-    return config;
-  },
-};
+//const nextConfig = {
+//  webpack(config) {
+//    config.module.rules.push({
+//      test: /\.svg$/,
+//      issuer: /\.[jt]sx?$/,
+//      use: ['@svgr/webpack'],
+//    });
+//    return config;
+//  },
+//};
 
-module.exports = nextConfig;
+//module.exports = nextConfig;
 
